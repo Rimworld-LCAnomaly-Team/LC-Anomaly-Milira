@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>LC Anomaly Milira</name>
+	<author>DarthCY</author>
+	<packageId>DarthCY.LC.Milira</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<description>The Milira Anomaly for Milira Race.</description>
+	<!-- <url></url> -->
+	<modDependencies>
+		<li>
+			<packageId>DarthCY.LC.AnomalyLibrary</packageId>
+			<displayName>LC Anomaly Library</displayName>
+			<downloadUrl>https://github.com/DarthCY-K/LC-Anomaly-Library/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>DarthCY.LC.AnomalyCore</packageId>
+			<displayName>LC Anomaly Core</displayName>
+			<downloadUrl>https://github.com/DarthCY-K/LC-Anomaly-Core/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>DarthCY.LC.AnomalyCore</packageId>
+			<displayName>LC Anomaly Core</displayName>
+			<downloadUrl>https://github.com/DarthCY-K/LC-Anomaly-Core/releases/latest</downloadUrl>
+		</li>
+		<li> 
+			<packageId>Ancot.MiliraRace</packageId>
+			<displayName>Milira Race</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3256974620</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>DarthCY.LC.AnomalyLibrary</li>
+		<li>DarthCY.LC.AnomalyCore</li>
+		<li>Ancot.MiliraRace</li>
+	</loadAfter>
+</ModMetaData>

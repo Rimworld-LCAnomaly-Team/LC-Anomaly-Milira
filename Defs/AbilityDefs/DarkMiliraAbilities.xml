@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 骑枪 -->
+  <AbilityDef>
+    <defName>DarkMilira_Skill_Lance</defName>
+    <label>Charge of Geironul</label>
+    <description>The combat skill of charging after a short charge unto the target, puncturing all foes on the path. Deal damage unto enemies along a straight line until being blocked.\n Deal 100% weapon damage for 100% weapon armor penetration by consuming 30 weapon energy.</description>
+    <iconPath>Milira/UI/WeaponSkill/Lance</iconPath>
+    <cooldownTicksRange>300</cooldownTicksRange>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Milira.Verb_CastAbilityMiliraFly_Lance</verbClass>
+      <label>jump</label>
+      <violent>true</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>1.5</warmupTime>
+      <range>41.9</range>
+      <!-- <minRange>4.9</minRange> -->
+      <requireLineOfSight>true</requireLineOfSight>
+      <flightEffecterDef>Milira_BurstFly_Lance</flightEffecterDef>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <comps>
+      <li Class="Milira.CompProperties_AbilityLanceCharge">
+        <range>41.9</range>
+        <lineWidthEnd>1</lineWidthEnd>
+      </li>
+      <li Class="AncotLibrary.CompProperties_AbilityCheckWeaponCharge" />
+      <li Class="AncotLibrary.CompProperties_AbilityOnlyRace">
+        <races>
+          <li>DarkMilira</li>
+        </races>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 战锤 -->
+  <AbilityDef>
+    <defName>DarkMilira_Skill_Hammer</defName>
+    <label>Quake of Thrud</label>
+    <description>The combat skill of smashing onto the foes by casting out energy in the form of giant hammer. Dealing damage, stun and knocking back around the impact point, outstandingly effective for buildings.\n Deal 100% of weapon damage for 100% of weapon armor penetration upon pawns, plus with stunning of 20% weapon damage and knocking back; 1200% weapon damage upon buildings. Consumes 40 weapon energy.</description>
+    <iconPath>Milira/UI/WeaponSkill/Hammer</iconPath>
+    <cooldownTicksRange>300</cooldownTicksRange>
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Milira.Verb_CastAbilityMiliraFly_Hammer</verbClass>
+      <label>jump</label>
+      <violent>true</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>1.5</warmupTime>
+      <range>24.9</range>
+      <!-- <minRange>4.9</minRange> -->
+      <requireLineOfSight>true</requireLineOfSight>
+      <flightEffecterDef>Milira_BurstFly</flightEffecterDef>
+      <soundCast>Longjump_Jump</soundCast>
+      <soundLanding>Longjump_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetBuildings>true</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <jobDef>CastJump</jobDef>
+    <comps>
+      <li Class="AncotLibrary.CompProperties_AbilityCheckWeaponCharge" />
+      <li Class="AncotLibrary.CompProperties_AbilityOnlyRace">
+        <races>
+          <li>DarkMilira</li>
+        </races>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 镰刀 -->
+  <AbilityDef>
+    <defName>DarkMilira_Skill_Sickle</defName>
+    <label>Whirlwind of Gunn</label>
+    <description>The combat skill of rotating to attack surrounding enemies with giant sickle formed by casting out energy, dealing damage unto all enemies within a certain radius and slaying instantly foes with low health.\n Deal 100% of weapon damage for 100% weapon amor penetration upon pawns within range. Immediately slay the target when its total health is impair to under 25% by this skill. Consume 20 weapon energy.</description>
+    <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+    <iconPath>Milira/UI/WeaponSkill/Sickle</iconPath>
+    <cooldownTicksRange>120</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+    <targetRequired>false</targetRequired>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <!-- <showCastingProgressBar>true</showCastingProgressBar> -->
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <!-- <warmupEffecter>Fire_Burst_Warmup</warmupEffecter> -->
+      <violent>true</violent>
+      <warmupTime>0.3</warmupTime>
+      <requireLineOfSight>false</requireLineOfSight>
+      <range>5.9</range>
+      <drawAimPie>false</drawAimPie>
+      <targetParams>
+        <canTargetSelf>true</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Milira.CompProperties_AbilitySickle">
+        <radius>5.9</radius>
+      </li>
+      <li Class="AncotLibrary.CompProperties_AbilityCheckWeaponCharge" />
+      <li Class="AncotLibrary.CompProperties_AbilityOnlyRace">
+        <races>
+          <li>DarkMilira</li>
+        </races>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <!-- 大剑 -->
+  <AbilityDef>
+    <defName>DarkMilira_Skill_Sword</defName>
+    <label>Bombardment of Skogul</label>
+    <description>The combat skill of powering up and slashing unto the targeted direction with energy-casted giant sword, dealing damage upon a whole straight line. Long-time powering up is necessary however. Outstandingly effective for buildings.\n Deal 300% weapon damage for 200% weapon armor penetration and apply a large amount of plasma meltdown buildup; 3000% weapon damage upon buildings. Consume 100 weapon energy.</description>
+    <iconPath>Milira/UI/WeaponSkill/Sword</iconPath>
+    <cooldownTicksRange>1200</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <!-- <warmupStartSound>Milira_ExcaliburWarmup</warmupStartSound> -->
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>65</range>
+      <warmupTime>10</warmupTime>
+      <drawAimPie>false</drawAimPie>
+      <requireLineOfSight>false</requireLineOfSight>
+      <ai_RangedAlawaysShootGroundBelowTarget>true</ai_RangedAlawaysShootGroundBelowTarget>
+      <ai_TargetHasRangedAttackScoreOffset>200</ai_TargetHasRangedAttackScoreOffset>
+      <defaultCooldownTime>5</defaultCooldownTime>
+      <soundCast>Milira_ExcaliburShot</soundCast>
+      <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+      <soundAiming>Milira_ExcaliburWarmup</soundAiming>
+    </verbProperties>
+    <comps>
+      <li Class="Milira.CompProperties_AbilityExcalibur">
+        <distance>65</distance>
+      </li>
+      <li Class="AncotLibrary.CompProperties_AbilityCheckWeaponCharge" />
+      <li Class="AncotLibrary.CompProperties_AbilityOnlyRace">
+        <races>
+          <li>DarkMilira</li>
+        </races>
+      </li>
+    </comps>
+  </AbilityDef>
+
+
+  <!-- 战矛 -->
+  <AbilityDef>
+    <defName>DarkMilira_Skill_Spear</defName>
+    <label>Spear of Rota</label>
+    <description>The combat skill of throwing a javelin casted by energy unto target, dealing damage upon target hit as well as the behind area.\n Deal 30 damage for 65% of weapon armor penetration upon the target area. Consume 25 weapon energy.</description>
+    <iconPath>Milira/UI/WeaponSkill/Spear</iconPath>
+    <cooldownTicksRange>60</cooldownTicksRange>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>44.9</range>
+      <warmupTime>2.5</warmupTime>
+      <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+          <canTargetPawns>true</canTargetPawns>
+      </targetParams>
+      <soundCast>Milira_SpearSkill_Fire</soundCast>
+      <aimingChargeMote>Milira_Mote_Spear_Charge</aimingChargeMote>
+      <aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+    </verbProperties>
+    <comps>
+      <li Class="Milira.CompProperties_AbilitySpear">
+        <projectileDef>Milira_Skill_Spear_Projectile</projectileDef>
+        <sprayEffecter>Milira_SpearFire</sprayEffecter>
+        <radius>9.5</radius>
+      </li>
+      <li Class="AncotLibrary.CompProperties_AbilityCheckWeaponCharge" />
+      <li Class="AncotLibrary.CompProperties_AbilityOnlyRace">
+        <races>
+          <li>DarkMilira</li>
+        </races>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

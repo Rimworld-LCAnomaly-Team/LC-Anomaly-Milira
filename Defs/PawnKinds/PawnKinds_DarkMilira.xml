@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="BaseLCAMiliraKind" Abstract="True">
+    <defaultFactionType>Entities</defaultFactionType>
+    <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
+    <meleeAttackInfectionPathways>
+      <li>EntityAttacked</li>
+    </meleeAttackInfectionPathways>
+    <forceDeathOnDowned>false</forceDeathOnDowned>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BaseLCAMiliraKind">
+    <defName>DarkMilira</defName>
+    <label>异常的米莉拉</label>
+    <race>DarkMilira</race>
+    <combatPower>20</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/DarkMilira/DarkMilira</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

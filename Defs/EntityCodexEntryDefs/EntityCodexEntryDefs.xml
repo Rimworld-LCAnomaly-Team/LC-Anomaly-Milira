@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+  	<defName>DarkMilira</defName>
+    <label>异常的米莉拉</label>
+    <description>该单位佩戴了认知阻碍面具，无法对其进行正常识别。</description>
+    <uiIconPath>UI/CodexEntries/DarkMilira</uiIconPath>
+    <category>WAW</category>
+    <!-- <discoveryType>BecameVisible</discoveryType> -->
+    <linkedThings>
+      <li>DarkMilira</li>
+    </linkedThings>
+    <!-- <discoveredResearchProjects>
+      <li>ExtractMeatLantern</li>
+    </discoveredResearchProjects> -->
+    <orderInCategory>800</orderInCategory>
+  </LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+
+</Defs>
