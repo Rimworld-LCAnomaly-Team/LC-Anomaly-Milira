@@ -7,17 +7,12 @@
 		<li>1.5</li>
 	</supportedVersions>
 	<description>The Milira Anomaly for Milira Race.</description>
-	<!-- <url></url> -->
+	<url>https://github.com/Rimworld-LCAnomaly-Team/LC-Anomaly-Milira</url>
 	<modDependencies>
 		<li>
 			<packageId>DarthCY.LC.AnomalyLibrary</packageId>
 			<displayName>LC Anomaly Library</displayName>
 			<downloadUrl>https://github.com/DarthCY-K/LC-Anomaly-Library/releases/latest</downloadUrl>
-		</li>
-		<li>
-			<packageId>DarthCY.LC.AnomalyCore</packageId>
-			<displayName>LC Anomaly Core</displayName>
-			<downloadUrl>https://github.com/DarthCY-K/LC-Anomaly-Core/releases/latest</downloadUrl>
 		</li>
 		<li>
 			<packageId>DarthCY.LC.AnomalyCore</packageId>
