@@ -1,4 +1,4 @@
-﻿using LCAnomalyLibrary.Comp.Abstract;
+﻿using LCAnomalyLibrary.Comp;
 
 namespace LCAnomalyMilira.Things
 {
