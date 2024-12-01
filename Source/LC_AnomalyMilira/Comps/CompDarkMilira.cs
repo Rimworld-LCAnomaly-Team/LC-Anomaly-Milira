@@ -1,5 +1,5 @@
-﻿using LCAnomalyLibrary.Comp;
-using LCAnomalyLibrary.Util;
+﻿using LCAnomalyCore.Comp;
+using LCAnomalyCore.Util;
 using RimWorld;
 using Verse;
 

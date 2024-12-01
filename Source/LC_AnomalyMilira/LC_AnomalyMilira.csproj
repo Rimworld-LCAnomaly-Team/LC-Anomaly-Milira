@@ -39,8 +39,8 @@
       <HintPath>..\..\..\LC Anomaly Core\Assemblies\LCAnomalyCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="LCAnomalyLibrary">
-      <HintPath>..\..\..\LC Anomaly Library\Assemblies\LCAnomalyLibrary.dll</HintPath>
+    <Reference Include="LCAnomalyCore">
+      <HintPath>..\..\..\LC Anomaly Library\Assemblies\LCAnomalyCore.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Milira">

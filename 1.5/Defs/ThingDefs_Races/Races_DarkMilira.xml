@@ -122,7 +122,7 @@
         <lookForTargetOnEscape>false</lookForTargetOnEscape>
         <hasAnimation>false</hasAnimation>
       </li>
-      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_Studiable">
+      <li Class="LCAnomalyCore.Comp.LC_CompProperties_Studiable">
         <frequencyTicks>60000</frequencyTicks>
         <studyTimesPeriod>1</studyTimesPeriod>
         <knowledgeCategory>Basic</knowledgeCategory>
@@ -150,7 +150,7 @@
         <amountStudyNormal>20</amountStudyNormal> 
         <amountStudyBad>5</amountStudyBad>
       </li>
-      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_StudyUnlocks">
+      <li Class="LCAnomalyCore.Comp.LC_CompProperties_StudyUnlocks">
         <studyNotes>
           <li>
             <threshold>5</threshold>
